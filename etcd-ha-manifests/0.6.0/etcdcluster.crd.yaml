@@ -16,3 +16,14 @@ spec:
       - etcd
   subresources:
     status: {}
+  validation:
+    openAPIV3Schema:
+      type: object
+      properties:
+        spec:
+          type: object
+          properties:
+            version:
+              type: string
+            size:
+              type: integer
