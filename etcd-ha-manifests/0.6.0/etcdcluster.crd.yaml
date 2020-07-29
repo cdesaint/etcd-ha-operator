@@ -27,3 +27,18 @@ spec:
               type: string
             size:
               type: integer
+            TLS:
+              type: object
+              properties:
+                static:
+                  type: object
+                  properties:
+                    member:
+                      type: object
+                      properties:
+                        peerSecret:
+                          type: string
+                        serverSecret:
+                          type: string
+                    operatorSecret:
+                      type: string
